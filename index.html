@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Suhas J | Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  </link>
+</head>
+
+<body class="antialiased relative">
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 backdrop-blur-md border-b border-[#07142b]">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6 text-[0.95rem] text-[var(--muted)]">
+      <h1 class="font-semibold text-[var(--accent)] tracking-wide"><a href="#home">Joshua Suhas J</a></h1>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#music" class="nav-link">Music</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section pt-48 pb-28">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Text -->
+      <div>
+        <p class="text-[var(--accent)] mb-3 text-sm tracking-wide">Hi, my name is</p>
+        <h1 class="text-5xl font-bold mb-2">Joshua Suhas J.</h1>
+        <h2 class="text-4xl font-semibold text-[var(--muted)] mb-6">I build things for the web.</h2>
+        <p class="max-w-lg text-[var(--muted)] mb-8">
+          I'm a Computer Science Engineer focused on building performant and elegant web applications.
+          I love working with JavaScript, Python, and modern frameworks to bring creative ideas to life.
+        </p>
+        <a href="assets/SuhasJ_resume.pdf" target="_blank"
+          class="inline-block border border-[var(--accent)] text-[var(--accent)] px-5 py-2 rounded hover:bg-[var(--accent)] hover:text-[#0a192f] transition">
+          View Resume
+        </a>
+      </div>
+
+      <!-- photo -->
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/me.png" alt="Joshua Suhas J"
+          class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-2xl border-2 border-[#233554] shadow-lg hover:shadow-[0_0_25px_rgba(100,255,218,0.15)] transition" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h3 class="section-title">About Me</h3>
+    <p class="muted max-w-3xl">
+      I’m Suhas, a Computer Science graduate who enjoys building tools, web apps, and backend systems that solve real problems. I work mostly with Python, Node.js, and React, focusing on creating fast, scalable, and reliable software. I love exploring new technologies, automating workflows, and designing APIs that make things just work. Outside of code and music, I’m usually out for a walk or brainstorming my next project idea.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h3 class="section-title">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-1 text-[var(--text)]">GatedDream</h4>
+        <p class="text-sm text-[var(--muted)] mb-3">
+          A real-estate web platform using Convex and Resend, enabling dynamic uploads and automated email workflows.
+        </p>
+        <a href="https://gateddream.com" target="_blank" class="text-[var(--accent)] text-sm hover:underline">Live
+          Demo</a>
+      </div>
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-1 text-[var(--text)]">CLI Email Cleaner</h4>
+        <p class="text-sm text-[var(--muted)] mb-3">
+          A Python CLI tool for organizing Gmail inboxes via OAuth2, with sender/date filters and safe deletion
+          controls.
+        </p>
+        <a href="https://github.com/suhasjoshuaj/CLI-Email-Cleaner" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">GitHub</a>
+      </div>
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-1 text-[var(--text)]">Kanye West Quote Generator</h4>
+        <p class="text-sm text-[var(--muted)] mb-3">
+          A minimalist web app fetching random Kanye quotes using a simple API and vanilla JS.
+        </p>
+        <a href="https://github.com/Suhasjoshuaj/kanye_random_quote" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">GitHub</a>
+      </div>
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-1 text-[var(--text)]">BlogPost API</h4>
+        <p class="text-sm text-[var(--muted)] mb-3">
+          REST API with CRUD endpoints for blog posts built using Express and Node.js.
+        </p>
+        <a href="https://github.com/Suhasjoshuaj/Blogpost-api" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h3 class="section-title">Experience & Certificates</h3>
+    <ul class="grid md:grid-cols-2 gap-6">
+      <li class="card">
+        <p class="font-semibold mb-1">Deep Learning Course</p>
+        <p class="text-sm text-[var(--muted)] mb-2">Explored CNNs and transfer learning methods with real datasets.</p>
+        <a href="assets/certs/Joshua Suhas Jaddu_SkillDzire.pdf" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">View Certificate</a>
+      </li>
+      <li class="card">
+        <p class="font-semibold mb-1">RPA Using Blue Prism</p>
+        <p class="text-sm text-[var(--muted)] mb-2">Automated workflows for repetitive business processes using Blue
+          Prism.</p>
+        <a href="assets/certs/Joshua Suhas Jaddu Blueprism.pdf" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">View Certificate</a>
+      </li>
+      <li class="card">
+        <p class="font-semibold mb-1">Spypro Summer Internship</p>
+        <p class="text-sm text-[var(--muted)] mb-2">
+          Cybersecurity with network security, cryptography, and ethical hacking fundamentals.
+        </p>
+        <a href="assets/certs/Joshua Suhas Jaddu SpyPro.pdf" target="_blank"
+          class="text-[var(--accent)] text-sm hover:underline">View Certificate</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Music -->
+  <section id="music" class="section">
+    <h3 class="section-title">Music & Hobbies</h3>
+    <p class="muted mb-6">I like to read Fiction and I also compose Classical and EDM-ish beats. Here are a few snippets:</p>
+    <div class="flex flex-wrap gap-4">
+      <div class="music-card w-full md:w-[48%]">
+        <p>Flow</p>
+        <button onclick="playTrack('assets/beats/track01.mp3', this)" class="text-[var(--accent)]">
+          <i data-feather="play"></i>
+        </button>
+      </div>
+      <div class="music-card w-full md:w-[48%]">
+        <p>Hunt</p>
+        <button onclick="playTrack('assets/beats/track03_Chase.mp3', this)" class="text-[var(--accent)]">
+          <i data-feather="play"></i>
+        </button>
+      </div>
+      <div class="music-card w-full md:w-[48%]">
+        <p>Chase</p>
+        <button onclick="playTrack('assets/beats/track04_Hunt.mp3', this)" class="text-[var(--accent)]">
+          <i data-feather="play"></i>
+        </button>
+      </div>
+      <audio id="audioPlayer" class="hidden" controls></audio>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section text-center">
+    <h3 class="section-title">Contact</h3>
+    <p class="muted mb-6 max-w-lg mx-auto">
+      Interested in collaborating, hiring, or just chatting about tech and music?
+      Feel free to reach out below.
+    </p>
+    <div class="flex justify-center space-x-8 text-[var(--accent)] text-lg">
+      <a href="mailto:suhasjoshuaj@gmail.com"><i data-feather="mail"></i></a>
+      <a href="https://github.com/suhasjoshuaj" target="_blank"><i data-feather="github"></i></a>
+      <a href="https://www.linkedin.com/in/joshua-j-suhas-77b0b92b4" target="_blank"><i data-feather="linkedin"></i></a>
+      <a href="https://www.instagram.com/joshuasuhasj" target="_blank"><i data-feather="instagram"></i></a>
+    </div>
+  </section>
+
+  <footer class="text-center py-8 text-xs">
+    <p>© 2025 Joshua Suhas J — Designed & Built with ❤️ using HTML + TailwindCSS + JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
